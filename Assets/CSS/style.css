@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #c3c6c7;
+    color: #000000;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 5%;
+    font-size: 1.5rem;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    margin-right: 3%;
+    font-size: 3.6rem;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-items li {
+    margin-right: 20px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-items {
+        display: none; /* Verberg standaard alle menu-items op klein scherm */
+    }
+
+    .menu-toggle:checked ~ .menu-items {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #0e2431;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-toggle:checked ~ .menu-items li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
