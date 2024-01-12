@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-    background-color: #c3c6c7;
+    background-color: #bcbcbd;
     color: #000000;
     padding: 5px 0;
     position: fixed;
@@ -56,7 +56,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .menu-items {
-        display: none; /* Verberg standaard alle menu-items op klein scherm */
+        display: none;
     }
 
     .menu-toggle:checked ~ .menu-items {
@@ -67,7 +67,7 @@ body {
         right: 0;
         width: 100%;
         height: 100vh;
-        background-color: #0e2431;
+        background-color: #5b5d5d;
         justify-content: center;
         align-items: center;
         text-align: center;
