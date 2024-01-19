@@ -52,6 +52,19 @@ body {
     color: #fff;
     font-weight: 500;
     font-size: 1.2rem;
+    transition: all 250ms ease-out;
+}
+
+.menu-items a:hover {
+    color: #000000;
+    transition: all 250ms;
+   /* border-bottom: 2px solid #000000;*/
+}
+
+.menu-items a.active {
+    color: #000000;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #000000;
 }
 
 @media screen and (max-width: 768px) {

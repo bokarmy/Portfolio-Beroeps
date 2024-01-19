@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
+<nav class="navbar">
         <div class="container">
             <div class="logo">
                 <h1>Portfolio</h1>
@@ -18,8 +18,8 @@
             <ul class="menu-items">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><a class="active" href="#">Projecten</a></li>
-                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="Projecten.html">Projecten</a></li>
+                <li><a class="active" href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
