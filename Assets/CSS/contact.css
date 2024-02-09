@@ -5,7 +5,6 @@
     margin-left: 36%;
     background-color: rgb(226, 226, 226);
     padding: 170px 180px;
-    font-family: 'Raleway', sans-serif;
     border-radius: 20px;
     font-size: larger;
     box-shadow: 10px 20px 20px    rgba(0, 0, 0, 0.252);
@@ -61,7 +60,6 @@ input[type=tel], select {
     text-decoration: none;
     margin-top: 1%;
     color: rgb(255, 255, 255);
-    font-family: 'Raleway', sans-serif;
     padding: 15px 35px;
     transition: all 250ms ease-out;
     font-size: 15px;
@@ -84,7 +82,7 @@ input[type=tel], select {
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Avenir Next", "Avenir", sans-serif;
 }
 .footer {
     background-color: #333;

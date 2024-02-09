@@ -21,7 +21,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Projecten.html">Projecten</a></li>
-                <li><a class="active" href="#">Contact</a></li>
+                <li><a class="active" href="Contact.php">Contact</a></li>
             </ul>
         </div>
     </nav>
