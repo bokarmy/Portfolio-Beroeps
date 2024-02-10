@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-family: 'Jost', sans-serif;
+
 }
 
 .navbar {
@@ -20,8 +21,16 @@ body {
 }
 
 .logo {
+    
+    height: 100px;
     margin-left: 5%;
     font-size: 1.5rem;
+}
+
+.hblogo {
+    margin-top: -5%;
+    height: 120px;
+    width: auto;
 }
 
 .menu-toggle {
@@ -68,6 +77,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+    .menu-toggle{
+        height: 400px;
+        width: 2999;
+    }
+
     .menu-items {
         display: none;
     }
@@ -116,7 +131,7 @@ header {
  
  
 .highlight {
-    color: #ff9900;
+    color: rgb(31, 72, 255);
 }
  
 .btn {
@@ -151,3 +166,4 @@ header {
 .header-text h1{
     font-weight: 500;
 }
+

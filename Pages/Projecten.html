@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet">
+    <script src="../Assets/JS/script.js"></script>
     <link rel="stylesheet" href="../Assets/CSS/style.css">
+    <link rel="stylesheet" href="../Assets/CSS/projects.css">
     <title>Document</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>Portfolio</h1>
+                <img src="../Assets/Images/hblogo.png" class="hblogo" alt="">
             </div>
             <input type="checkbox" class="menu-toggle" id="menu-toggle">
             <label for="menu-toggle" class="hamburger">&#9776;</label>
             <ul class="menu-items">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a class="active" href="Projecten.html">Projecten</a></li>
+                <li><a href="About.html">About me</a></li>
+                <li><a class="active" href="Projecten.html">Projects</a></li>
                 <li><a href="Contact.php">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <h1 class="title">My projects</h1>
+    <div class="grid-container">
+        <div class="grid-item" id="grid1" href="#textdiv" onclick="project1()"><p class="itemname">1</p><img class="logoquiz" src="#" alt=""></div>
+        <div class="grid-item" id="grid2" href="#textdiv" onclick="project2()"><p class="itemname">2</p><img class="logobjm" src="#" alt=""></div>
+        <div class="grid-item" id="grid3" href="#textdiv" onclick="project3()"><p class="itemname">3</p><img class="logovtk" src="#" alt=""></div>
+        <div class="grid-item" id="grid4" href="#textdiv" onclick="project4()"><p class="itemname">4</p><img class="logominop" src="#" alt=""></div>
+    </div>
+    <br>
+    <div id="textdiv">
+        <h1 id="header"></h1>
+
+        <p id="tekst"></p>
+    </div>
 </body>
 </html>

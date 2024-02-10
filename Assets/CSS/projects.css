@@ -1,0 +1,119 @@
+html{
+    scroll-behavior: smooth;
+  }
+  body{
+  
+  }
+  
+  .title{
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: 50px;
+      margin-top: 10%;
+      font-weight: 200;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+  }
+  .grid-item {
+    background-color: #bcbcbd;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.596);
+    transition: all 250ms ease-out;
+  }
+  
+  .grid-item:hover{
+    box-shadow: 0px 0px 0px;
+    margin-top: 1.5%;
+    transition: all 250ms;
+  }
+  .grid-item:focus{
+    background-color: blue;
+  }
+  
+  .logovtk{
+    width: auto;
+    height: 200px;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+  .logobjm{
+    width: auto;
+    height: 150px;
+    margin-left: 0;
+    margin-top: 7%;
+    
+  }
+  .logoquiz{
+    width: auto;
+    height: 80px;
+    margin-left: 0;
+    margin-top: 25%;
+    filter: invert(70%);
+  }
+  
+  #textdiv{
+    position: relative;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #header{
+    margin-top: 2%;
+  }
+  #tekst{
+    max-width: 600px;
+    margin-top: 3%;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .title{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        margin-top: 30%;
+        font-weight: 200;
+    }
+
+    .grid-container{
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+    .grid-item{
+    
+        justify-content: space-between;
+        padding: 20px 20px 30px 20px;
+        height: 200px;
+        width: 100px;
+        
+    }
+
+    .grid-item:hover{
+        box-shadow: 0px 0px 0px;
+   
+        transition: all 250ms;
+      }
+
+    #grid3{
+        margin-top: 10%;
+    }
+
+    #grid4{
+        margin-top: 10%;
+
+    }  
+
+}

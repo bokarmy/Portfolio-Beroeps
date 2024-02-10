@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Assets/CSS/style.css">
     <link rel="stylesheet" href="../Assets/CSS/contact.css">
     <title>Document</title>
@@ -13,14 +16,14 @@
 <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>Portfolio</h1>
+                <img src="../Assets/Images/hblogo.png" class="hblogo" alt="">
             </div>
             <input type="checkbox" class="menu-toggle" id="menu-toggle">
             <label for="menu-toggle" class="hamburger">&#9776;</label>
             <ul class="menu-items">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projecten.html">Projecten</a></li>
+                <li><a href="About.html">About me</a></li>
+                <li><a href="Projecten.html">Projects</a></li>
                 <li><a class="active" href="Contact.php">Contact</a></li>
             </ul>
         </div>
