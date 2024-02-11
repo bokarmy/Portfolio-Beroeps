@@ -9,6 +9,7 @@
     font-size: larger;
     box-shadow: 10px 20px 20px    rgba(0, 0, 0, 0.252);
     margin-top: 250px;
+    z-index: 999;
 }
  
 form {
@@ -16,6 +17,7 @@ form {
     border-radius: 20px;
     min-width: 190%;
     margin-top: -65%;
+    z-index: 999;
 }
 input[type=text],
 select,
@@ -82,7 +84,6 @@ input[type=tel], select {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Avenir Next", "Avenir", sans-serif;
 }
 .footer {
     background-color: #333;
