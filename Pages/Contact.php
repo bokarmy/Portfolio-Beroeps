@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Jost&family=Sen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Assets/CSS/main.css">
     <link rel="stylesheet" href="../Assets/CSS/contact.css">
-    <link rel="stylesheet" href="/Assets/CSS/bubbles.css">
+    <link rel="stylesheet" href="../Assets/CSS/bubbles.css">
     <title>Document</title>
     
 </head>
@@ -30,7 +30,7 @@
         </div>
     </nav>
 
-    <div class="bubbles">
+    <div class="bubblescontact">
 
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

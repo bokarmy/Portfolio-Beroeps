@@ -30,6 +30,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    z-index: 999;
 }
  
 input[type=email], select {
@@ -66,6 +67,7 @@ input[type=tel], select {
     transition: all 250ms ease-out;
     font-size: 15px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.673);
+    z-index: 999;
   }
  
   .submit:hover{
@@ -91,6 +93,7 @@ body {
     margin-top: 10%;
     padding: 50px 0;
     text-align: center;
+    z-index: 999;
 }
 .social-icons {
     margin-top: 20px;
