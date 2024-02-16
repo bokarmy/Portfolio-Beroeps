@@ -53,7 +53,7 @@
     }
         ?>
     
-    <div class="contactform">
+    <div class="contact">
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <label for="name">Name:</label><br>
             <input type="text" name="name" id="name" required><br><br>
@@ -74,18 +74,7 @@
         </form>
     </div>
 
-    <body>
-    <footer class="footer">
-        <div class="container">
-            <h2>Connect with me</h2>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/yourpage" target="_blank" id=""><i class="fab fa-facebook">Facebook</i></a>
-                <a href="https://www.twitter.com/yourpage" target="_blank" id=""><i class="fab fa-twitter">Twitter</i></a>
-                <a href="https://www.instagram.com/yourpage" target="_blank" id="insta"><i class="fab fa-instagram"></i>Instagram</a>
-                <a href="https://www.linkedin.com/in/yourpage" target="_blank" id="linked"><i class="fab fa-linkedin">Linkedin</i></a>
-            </div>
-        </div>
-    </footer>
+
 
     <div class="bubble"></div>
     <div class="bubble"></div>
