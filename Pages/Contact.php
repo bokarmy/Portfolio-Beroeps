@@ -74,7 +74,12 @@
         </form>
     </div>
 
+<<<<<<< HEAD
 
+=======
+    <body>
+    
+>>>>>>> 6da3d332f67af8661a667f69912002df93f92947
 
     <div class="bubble"></div>
     <div class="bubble"></div>

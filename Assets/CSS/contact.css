@@ -57,7 +57,6 @@ input[type=tel], select {
     border: none;
     background-color: rgb(31, 72, 255);
     border-radius: 10px;
-    position: absolute;
     text-decoration: none;
     margin-top: 1%;
     color: rgb(255, 255, 255);
@@ -100,23 +99,27 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
 
-  .contact{
-    transform: translate(-35%, -20%);
+
+  @media screen and (max-width: 768px) {
+
+  .contactform{
+    transform: translate(-30%, -20%);
+    position: absolute;
     height: 200px;
-    width: 20px;
+    width: 100px;
     align-items: center;
+    margin-right: 600%;
     font-size: 15px;
-
   }
-  form{
-    transform: translate(-45%, -30%);
-    margin-top: 20%;
-    min-width: 1400%;
-  
+  .form{
+    width: 80%;
   }
 
+  .footer{
+    margin-top: 100vh;
+    height: 5%;
+  }
 
   .social-icons{
     margin-top: -10%;
