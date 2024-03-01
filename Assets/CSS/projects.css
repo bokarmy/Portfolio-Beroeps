@@ -1,121 +1,120 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Jost', 'Sen', sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  margin-top: 10%;
+  font-weight: 200;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  margin: 3% 10%;
+}
+
+.grid-item {
+  background-color: #bcbcbd;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.596);
+  transition: all 250ms ease-out;
+}
+.grid-item img {
+  width: 100%; 
+  height: auto; 
+}
+
+.grid-item:hover {
+  box-shadow: 0px 0px 0px;
+  margin-top: 1.5%;
+  transition: all 250ms;
+}
+
+.grid-item:focus {
+  background-color: blue;
+}
+
+.logovtk {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 10%;
+}
+
+.logobjm {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-top: 10%;
+}
+
+.logoquiz {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  margin-top: 10%;
+  filter: invert(70%);
+}
+
+#textdiv {
+  position: relative;
+  margin: 0 10%;
+}
+
+#header {
+  margin-top: 2%;
+}
+
+#tekst {
+  max-width: 600px;
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+      font-size: 40px;
+      margin-top: 30%;
   }
-  body{
-  
-  }
-  
-  .title{
-      text-align: center;
-      color: rgb(0, 0, 0);
-      font-size: 50px;
-      margin-top: 10%;
-      font-weight: 200;
-  }
+
   .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 3%;
+      grid-template-columns: 1fr;
+      margin: 10% 5%;
   }
+
   .grid-item {
-    background-color: #bcbcbd;
-    padding: 30px;
-    font-size: 30px;
-    text-align: center;
-    width: 300px;
-    height: 100px;
-    border-radius: 15px;
-    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.596);
-    transition: all 250ms ease-out;
-    z-index: 999;
-  }
-  
-  .grid-item:hover{
-    box-shadow: 0px 0px 0px;
-    margin-top: 1.5%;
-    transition: all 250ms;
-  }
-  .grid-item:focus{
-    background-color: blue;
-  }
-  
-  .logovtk{
-    width: auto;
-    height: 200px;
-    margin-left: 0;
-    margin-top: 5%;
-  }
-  .logobjm{
-    width: auto;
-    height: 150px;
-    margin-left: 0;
-    margin-top: 7%;
-    
-  }
-  .logoquiz{
-    width: auto;
-    height: 80px;
-    margin-left: 0;
-    margin-top: 25%;
-    filter: invert(70%);
-  }
-  
-  #textdiv{
-    position: relative;
-    margin-top: 0%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  #header{
-    margin-top: 2%;
-  }
-  #tekst{
-    max-width: 600px;
-    margin-top: 3%;
+      padding: 20px;
   }
 
-  @media screen and (max-width: 768px) {
+  .logovtk {
+      max-width: 120px;
+  }
 
-    .title{
-        text-align: center;
-        color: rgb(0, 0, 0);
-        font-size: 40px;
-        margin-top: 30%;
-        font-weight: 200;
-    }
+  .logobjm {
+      max-width: 100px;
+  }
 
-    .grid-container{
-        grid-template-columns: auto auto;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 10%;
-    }
-    .grid-item{
-    
-        justify-content: space-between;
-        padding: 20px 20px 30px 20px;
-        height: 200px;
-        width: 100px;
-        
-    }
+  .logoquiz {
+      max-width: 60px;
+      margin-top: 15%;
+  }
 
-    .grid-item:hover{
-        box-shadow: 0px 0px 0px;
-   
-        transition: all 250ms;
-      }
+  #textdiv {
+      margin: 0 5%;
+  }
 
-    #grid3{
-        margin-top: 10%;
-    }
-
-    #grid4{
-        margin-top: 10%;
-
-    }  
-
-
+  #tekst {
+      max-width: 100%;
+  }
 }

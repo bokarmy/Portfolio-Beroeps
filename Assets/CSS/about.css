@@ -11,6 +11,33 @@
     margin-top: 13%;
     margin-left: 5%;
 }
+.skills-bar {
+    margin-top: 30px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 70%; /* You can adjust the width based on proficiency */
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #4caf50; /* Change the color based on your preference */
+    border-radius: 5px;
+}
 
 @media screen and (max-width: 768px) {
 
