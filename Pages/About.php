@@ -1,3 +1,35 @@
+
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+// about.php
+
+$hostname = "localhost:3306";
+$username = "dbz88885";
+$password = "bokarmy6806";
+$database = "88885_database";
+
+$conn = mysqli_connect($hostname, $username, $password, $database);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$pageName = basename($_SERVER['PHP_SELF'], ".php");
+
+$query = "SELECT content FROM page_content WHERE page_name = '$pageName'";
+$result = mysqli_query($conn, $query);
+
+if ($result) {
+    $row = mysqli_fetch_assoc($result);
+    $content = $row['content'];
+} else {
+    $content = "Content not found.";
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,11 +64,8 @@
     <div class="bubblesabout">
 
     <div class="text">
-        <h1 class="title">About me</h1>
-        
-        <p class="aboutme">Hi there! I'm Henk Bijlsma, a proud teacher at the Graphic Lyceum Rotterdam. My world revolves around the fascinating realm of coding, specifically in the domain of back-end software development. I get the incredible opportunity to share my love for coding with the bright minds enrolled in the Software Development program at the Graphic Lyceum Rotterdam.</p>
-
-           <p class="aboutme">For me, coding is not just a profession; it's a passion. I strive to ignite that same passion in my students, encouraging them to dive deep into the intricacies of back-end development with both curiosity and determination. My goal is to equip them with the skills and knowledge they need to thrive in the dynamic field of software development.</p> 
+        <h1 class="title"><?php echo $content; ?></h1>
+    </div>
        
            <div class="skills-bar">
             <h2>Coding Skills</h2>
