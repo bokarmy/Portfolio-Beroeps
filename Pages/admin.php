@@ -59,6 +59,11 @@ if ($result) {
         <br>
 
         <input type="submit" name="submit" value="Update Content">
+        <br>
+        <br>
+        <li><a href="./admin_projects.php">wijzig uw Projecten hier</a></li>
+        <li><a href="./admin_skillss.php">wijzig uw skills hier</a></li>
+
     </form>
 </body>
 </html>

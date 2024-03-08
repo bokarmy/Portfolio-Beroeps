@@ -23,8 +23,8 @@
             <label for="menu-toggle" class="hamburger">&#9776;</label>
             <ul class="menu-items">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="About.html">About me</a></li>
-                <li><a href="Projecten.html">Projects</a></li>
+                <li><a href="About.php">About me</a></li>
+                <li><a href="Projecten.php">Projects</a></li>
                 <li><a class="active" href="Contact.php">Contact</a></li>
             </ul>
         </div>

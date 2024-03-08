@@ -61,6 +61,7 @@ $result = $conn->query($sql);
             <!-- Voeg de invoervelden toe om nieuwe projecten toe te voegen -->
             <input type="text" name="project_name" placeholder="Project Name" required>
             <input type="text" name="project_description" placeholder="Project Description" required>
+            <input type="text" name="project_link" placeholder="Project link" required>
             <input type="text" name="project_image" placeholder="Project Image URL" required>
             <input type="submit" name="addProject" value="Add Project">
         </form>
@@ -72,6 +73,7 @@ $result = $conn->query($sql);
                 echo '<div class="project-card">';
                 echo '<h3>' . $row["name"] . '</h3>';
                 echo '<p>' . $row["description"] . '</p>';
+                echo '<p>' . $row["project_link"] . '</p>';
                 echo '<img src="' . $row["image"] . '" alt="' . $row["name"] . '">';
                 echo '<form method="post" action="admin_projects.php" class="delete-form">';
                 echo '<input type="hidden" name="project_id" value="' . $row["id"] . '">';
