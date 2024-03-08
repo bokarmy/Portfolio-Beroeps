@@ -1,9 +1,8 @@
-
 <?php
+// about.php
+
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
-
-// about.php
 
 $hostname = "localhost:3306";
 $username = "dbz88885";
@@ -27,8 +26,10 @@ if ($result) {
 } else {
     $content = "Content not found.";
 }
-?>
 
+$querySkills = "SELECT skill_name, skill_percentage FROM coding_skills";
+$resultSkills = mysqli_query($conn, $querySkills);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,8 +55,8 @@ if ($result) {
             <label for="menu-toggle" class="hamburger">&#9776;</label>
             <ul class="menu-items">
                 <li><a href="../index.html">Home</a></li>
-                <li><a class="active" href="About.html">About me</a></li>
-                <li><a href="Projecten.html">Projects</a></li>
+                <li><a class="active" href="About.php">About me</a></li>
+                <li><a href="Projecten.php">Projects</a></li>
                 <li><a href="Contact.php">Contact</a></li>
             </ul>
         </div>
@@ -63,40 +64,31 @@ if ($result) {
 
     <div class="bubblesabout">
 
-    <div class="text">
-        <h1 class="title"><?php echo $content; ?></h1>
-    </div>
-       
-           <div class="skills-bar">
-            <h2>Coding Skills</h2>
-            
-            <div class="skill">
-                <span class="skill-name">HTML</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 90%;"></div>
-                </div>
-            </div>
-        
-            <div class="skill">
-                <span class="skill-name">CSS</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 80%;"></div>
-                </div>
-            </div>
-        
-            <div class="skill">
-                <span class="skill-name">PHP</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 70%;"></div>
-                </div>
-            </div>
-        
-            <div class="skill">
-                <span class="skill-name">JavaScript</span>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 75%;"></div>
-                </div>
-            </div>
+        <div class="text">
+            <h1 class="title"><?php echo $content; ?></h1>
+        </div>
+
+        <?php
+        // Display skills
+        if (mysqli_num_rows($resultSkills) > 0) {
+            echo '<div class="skills-bar">';
+            echo '<h2>Coding Skills</h2>';
+            while ($rowSkill = mysqli_fetch_assoc($resultSkills)) {
+                $skillName = $rowSkill['skill_name'];
+                $skillPercentage = $rowSkill['skill_percentage'];
+
+                echo '<div class="skill">';
+                echo "<span class='skill-name'>$skillName</span>";
+                echo '<div class="skill-bar">';
+                echo "<div class='skill-progress' style='width: $skillPercentage%;'></div>";
+                echo '</div>';
+                echo '</div>';
+            }
+            echo '</div>';
+        } else {
+            echo "No coding skills found.";
+        }
+        ?>
 
 
         <div class="bubble"></div>

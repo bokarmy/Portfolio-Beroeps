@@ -81,6 +81,49 @@ body {
   max-width: 600px;
   margin-top: 3%;
 }
+/* In projects.css */
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px; /* Voeg marges toe naar wens */
+}
+
+.project-card {
+  width: 300px; /* Pas de breedte aan naar wens */
+  margin: 10px; /* Voeg marges toe naar wens */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Voeg een schaalanimatie toe bij hover */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.project-details {
+  padding: 10px;
+}
+
+.project-details h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.project-details p {
+  margin: 10px 0;
+  color: #555;
+}
+
 
 @media screen and (max-width: 768px) {
   .title {
